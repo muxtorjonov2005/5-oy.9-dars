@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <label for="username">Enter username</label>
+        <input type="text" id="username" placeholder="Enter username..." />
+        <label for="password">Enter password</label>
+        <input type="password" id="password" placeholder="Enter password..." />
+        <label for="nationality">Select nationality</label>
+        <select id="nationality">
+            <option value="uzbek">Uzbek</option>
+            <option value="russian">Russian</option>
+            <option value="english">English</option>
+        </select>
+        <label for="desc">Enter description</label>
+        <textarea id="desc" placeholder="Enter description..."></textarea>
+        
+        <button id="send" onclick="submitForm()">SEND</button>
+      </form>
+  
+      <div id="result"></div>
+      
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
